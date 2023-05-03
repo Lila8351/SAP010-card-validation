@@ -30,17 +30,27 @@ function isValid(){
           }else{
           newDatasArray.push(newData1);
           //se nao for maior do que 10, adiciona o valor (newData1) normalmente em newDatasArray
-      }
+          }
 
-    } else {
-      const newData0 = inputCardCharsArray[i];
-      //e se o index nao for ímpar, adiciona na array direto o valor, sem calculo.
-      newDatasArray.push(newData0);
-    }
+        } else {
+        const newData0 = inputCardCharsArray[i];
+        //e se o index nao for ímpar, adiciona na array direto o valor, sem calculo.
+        newDatasArray.push(newData0);
+        }
       }
     }
   }
   console.log(newDatasArray);
+  for (let l=0; l<newDatasArray.length; l++) {
+    soma += newDatasArray[l];
+  }
+  console.log(soma);
+
+  if (soma%10 == 0) {
+    window.alert("Seu cartão é válido!");
+  } else{
+    window.alert("Este cartão não existe!");
+  }
   //newDatasArray retorna a array das operações acima.
   //agora é necessário pegar cada valor do array e somar todos
 
