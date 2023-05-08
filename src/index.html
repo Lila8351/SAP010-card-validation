@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
-  <title>Buy Something</title>
+
+  <link rel="stylesheet" href="style.css">
+  <title>Buy</title>
 </head>
-<body>
+<body style="background-color: #FEF7E7">
+  <img id="buy" src="/images/buy.png">
   <header>
     <div class="buy">
       <!--Imagem buy-->
-      <img id="buy"><img>
       <!--respondividade botão buy-->
       <!--botão buy onClick puxa area texto pra input. Acho que não precisa disso, na verdade.-->
     </div>
@@ -22,29 +23,41 @@
     <script src="index.js" type="module"></script>
     <div class="creditCard">
       <!--Imagem cartão-->
-      <img id="creditCard"><img>
+
       <!--onChange -> maskify -> conforme vai digitando-->
       <!--onmouseout -> tira opacidade da bandeira identificada-->
       <label><h1>Qual o número do seu cartão?</h1></label>
+
       <p id="inputInstructions"><h6>Informe apenas números.</h6></p>
+
       <input type="password" id="inputCard" name="inputCard" placeholder="**** **** **** ****">
-      <br>
       <button id="startFunction">Pronto!</button>
       <br>
+      <img id="creditCard" src="/images/cartaocreditolaranja-modified.png">
       <br>
-      <p>Confirme o número de seu cartão:</p>
+
+      <p>Confirme o número digitado: </p>
+
       <input id="replaceCard" name="replaceCard">
       <!--p> Confirme o número do seu cartão: </p-->
 
       <button id="chooseFlag"> ok! </button>
-      <!--input id="trueOrFalse" name="trueOrFalse"-->
-
-      <div id="creditCardFlags">
+      <p>Seu cartao</p>
+      <input id="flag">
+      <div id="bandeiras">
         <img id="visa">
         <img id="mastercard">
         <img id="elo">
         <img id="amex">
       </div>
+
+      <input id="trueOrFalse" name="trueOrFalse">
+
+
+
+
+
+
     </div>
   </main>
   <footer></footer>
