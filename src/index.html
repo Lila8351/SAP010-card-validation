@@ -1,31 +1,52 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Valid CreditCard - Project1.1</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>CreditCard Validator</h1>
-      <img id="backgroundImg"><img>
-    </header>
-    <main>
-      <script src="index.js" type="module"></script>
-      <div class="CreditCardNumber">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <h2>
-        <label for="inputCard"> Número do cartão: </label>
-            <input id="inputCard" name="inputCard" minlength="14" maxlength="16" value="">
-            <button id="startFunction">Confirm</button>
-            <input id="replaceCard" name="replaceCard">
-            <!--<button id= "clickButton">Ok</button>-->
-            <button id="startIsValid"></button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Buy Something</title>
+</head>
+<body>
+  <header>
+    <div class="buy">
+      <!--Imagem buy-->
+      <img id="buy"><img>
+      <!--respondividade botão buy-->
+      <!--botão buy onClick puxa area texto pra input. Acho que não precisa disso, na verdade.-->
+    </div>
+  </header>
 
+  <main>
+    <script src="index.js" type="module"></script>
+    <div class="creditCard">
+      <!--Imagem cartão-->
+      <img id="creditCard"><img>
+      <!--onChange -> maskify -> conforme vai digitando-->
+      <!--onmouseout -> tira opacidade da bandeira identificada-->
+      <label><h1>Qual o número do seu cartão?</h1></label>
+      <p id="inputInstructions"><h6>Informe apenas números.</h6></p>
+      <input type="password" id="inputCard" name="inputCard" placeholder="**** **** **** ****">
+      <br>
+      <button id="startFunction">Pronto!</button>
+      <br>
+      <br>
+      <p>Confirme o número de seu cartão:</p>
+      <input id="replaceCard" name="replaceCard">
+      <!--p> Confirme o número do seu cartão: </p-->
 
-      </h2>
+      <button id="chooseFlag"> ok! </button>
+      <!--input id="trueOrFalse" name="trueOrFalse"-->
+
+      <div id="creditCardFlags">
+        <img id="visa">
+        <img id="mastercard">
+        <img id="elo">
+        <img id="amex">
       </div>
-    </main>
-    <footer></footer>
-  </body>
+    </div>
+  </main>
+  <footer></footer>
+</body>
 </html>
