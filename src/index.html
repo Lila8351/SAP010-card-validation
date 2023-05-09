@@ -26,32 +26,40 @@
 
       <!--onChange -> maskify -> conforme vai digitando-->
       <!--onmouseout -> tira opacidade da bandeira identificada-->
-      <label><h1>Qual o número do seu cartão?</h1></label>
+      <h1>Qual o número do seu cartão?</h1>
 
       <p id="inputInstructions"><h6>Informe apenas números.</h6></p>
 
+      <label for="inputInstructions">
       <input type="password" id="inputCard" name="inputCard" placeholder="**** **** **** ****">
+      </label>
+
       <button id="startFunction">Pronto!</button>
-      <br>
-      <img id="creditCard" src="/images/cartaocreditolaranja-modified.png">
-      <br>
+
+
+      <img id="creditCard" src="/images/cartaocreditolaranja-modified.png" alt="">
+
 
       <p>Confirme o número digitado: </p>
 
-      <input id="replaceCard" name="replaceCard">
+      <p id="replaceCard" name="replaceCard"></p>
       <!--p> Confirme o número do seu cartão: </p-->
 
       <button id="chooseFlag"> ok! </button>
+
       <p>Seu cartao</p>
-      <input id="flag">
-      <div id="bandeiras">
+
+      <div id="flag">
+      </div>
+
+      <div class="bandeiras">
         <img id="visa">
         <img id="mastercard">
         <img id="elo">
         <img id="amex">
       </div>
 
-      <input id="trueOrFalse" name="trueOrFalse">
+      <p id="trueOrFalse" name="trueOrFalse"></p>
 
 
 

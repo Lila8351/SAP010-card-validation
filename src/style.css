@@ -10,6 +10,10 @@ img#buy{
   margin-right: auto
 }
 
+body > #buy{
+
+}
+
 h1 {
 font-size: xx-large;
 font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial;

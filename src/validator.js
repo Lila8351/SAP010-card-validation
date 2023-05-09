@@ -31,11 +31,13 @@ const validator = {
     for (let j=0; j<array.length; j++){
       soma += array[j];
     }
-    if (soma%10 !== 0){
-      return true;
-    }else{
-      return false;
-    }
+    return soma%10!==0;
+
+    // if (soma%10 !== 0){
+    //   return true;
+    // }else{
+    //   return false;
+    // }
   }
 }
 export default validator;
