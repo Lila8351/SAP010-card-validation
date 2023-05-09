@@ -10,7 +10,9 @@
   <title>Buy</title>
 </head>
 <body style="background-color: #FEF7E7">
-  <img id="buy" src="/images/buy.png">
+  <img id="buy" src="/images/buy.png" alt="Notebook desenhado no mesmo tamanho de uma loja,
+  com pessoas próximas da tela e do teclado, passando ideia de familiaridade com compras virtuais,
+  tanto quanto em estabelecimentos físicos">
   <header>
     <div class="buy">
       <!--Imagem buy-->
@@ -21,50 +23,45 @@
 
   <main>
     <script src="index.js" type="module"></script>
-    <div class="creditCard">
+    <div class="credit-card">
       <!--Imagem cartão-->
 
       <!--onChange -> maskify -> conforme vai digitando-->
       <!--onmouseout -> tira opacidade da bandeira identificada-->
       <h1>Qual o número do seu cartão?</h1>
 
-      <p id="inputInstructions"><h6>Informe apenas números.</h6></p>
+      <p id="input-instructions"><h6>Informe apenas números.</h6></p>
 
-      <label for="inputInstructions">
-      <input type="password" id="inputCard" name="inputCard" placeholder="**** **** **** ****">
+      <label for="input-instructions">
+      <input type="password" id="input-card" name="input-card" placeholder="**** **** **** ****">
       </label>
 
-      <button id="startFunction">Pronto!</button>
+      <button id="start-function">Pronto!</button>
 
 
-      <img id="creditCard" src="/images/cartaocreditolaranja-modified.png" alt="">
+      <img id="credit-card" src="/images/cartaocreditolaranja-modified.png" alt="cartão de crédito desenhado">
 
 
       <p>Confirme o número digitado: </p>
 
-      <p id="replaceCard" name="replaceCard"></p>
+      <p id="replace-card" name="replace-card"></p>
       <!--p> Confirme o número do seu cartão: </p-->
 
-      <button id="chooseFlag"> ok! </button>
+      <button id="choose-flag"> ok! </button>
 
       <p>Seu cartao</p>
 
-      <div id="flag">
-      </div>
+      <input id="flag">
 
-      <div class="bandeiras">
+
+      <div class="flags">
         <img id="visa">
         <img id="mastercard">
         <img id="elo">
         <img id="amex">
       </div>
 
-      <p id="trueOrFalse" name="trueOrFalse"></p>
-
-
-
-
-
+      <p id="true-or-false" name="true-or-false"></p>
 
     </div>
   </main>

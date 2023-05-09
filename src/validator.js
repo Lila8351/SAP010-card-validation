@@ -13,6 +13,7 @@ const validator = {
   },
 
   isValid: function(cardArray){
+    cardArray.reverse();
     const array=[];
     let soma = 0;
     for (let i = 0; i < cardArray.length; i++) {
@@ -31,7 +32,7 @@ const validator = {
     for (let j=0; j<array.length; j++){
       soma += array[j];
     }
-    return soma%10!==0;
+    return soma%10===0;
 
     // if (soma%10 !== 0){
     //   return true;
