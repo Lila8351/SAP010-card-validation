@@ -12,33 +12,36 @@ const validator = {
     }
   },
 
-  isValid: function(cardArray){
-    cardArray.reverse();
-    const array=[];
-    let soma = 0;
-    for (let i = 0; i < cardArray.length; i++) {
-      if (i%2 === 0){
-        array.push(cardArray[i]);
-      }else{
-        const data = cardArray[i]*2;
-        if (data>=10){
-          const remainder = data%10 + 1;
-          array.push(remainder);
-        }else{
-          array.push(data);
-        }
-      }
-    }
-    for (let j=0; j<array.length; j++){
-      soma += array[j];
-    }
-    return soma%10===0;
 
-    // if (soma%10 !== 0){
-    //   return true;
-    // }else{
-    //   return false;
-    // }
-  }
+
 }
+//   isValid: function(cardArray){
+//     cardArray.reverse();
+//     const array=[];
+//     let soma = 0;
+//     for (let i = 0; i < cardArray.length; i++) {
+//       if (i%2 === 0){
+//         array.push(cardArray[i]);
+//       }else{
+//         const data = cardArray[i]*2;
+//         if (data>=10){
+//           const remainder = data%10 + 1;
+//           array.push(remainder);
+//         }else{
+//           array.push(data);
+//         }
+//       }
+//     }
+//     for (let j=0; j<array.length; j++){
+//       soma += array[j];
+//     }
+//     return soma%10===0;
+
+//     // if (soma%10 !== 0){
+//     //   return true;
+//     // }else{
+//     //   return false;
+//     // }
+//   }
+// }
 export default validator;

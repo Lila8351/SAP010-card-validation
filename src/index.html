@@ -24,16 +24,11 @@
   <main>
     <script src="index.js" type="module"></script>
     <div class="credit-card">
-      <!--Imagem cartão-->
 
-      <!--onChange -> maskify -> conforme vai digitando-->
-      <!--onmouseout -> tira opacidade da bandeira identificada-->
-      <h1>Qual o número do seu cartão?</h1>
-
-      <p id="input-instructions"><h6>Informe apenas números.</h6></p>
-
-      <label for="input-instructions">
-      <input type="password" id="input-card" name="input-card" placeholder="**** **** **** ****">
+      <label for="input-card">
+        <h1>Qual o número do seu cartão?</h1>
+        <p id="input-instructions">Informe apenas números</p>
+        <input type="password" id="input-card" name="input-card" placeholder="**** **** **** ****">
       </label>
 
       <button id="start-function">Pronto!</button>
@@ -51,14 +46,13 @@
 
       <p>Seu cartao</p>
 
-      <input id="flag">
+      <p id="flag">bandeira</p>
 
 
       <div class="flags">
-        <img id="visa">
-        <img id="mastercard">
-        <img id="elo">
-        <img id="amex">
+        <figure class="flags">
+          <img>
+        </figure>
       </div>
 
       <p id="true-or-false" name="true-or-false"></p>
