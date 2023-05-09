@@ -7,10 +7,7 @@ function myFunction(){
 
   const mask = validator.maskify(input);
   document.getElementById("replace-card").innerHTML = mask;
-
-  //mask.onMouseOver = input;
   document.getElementById("replace-card").onmouseover = function(){mouseOver()};
-  //document.getElementById("replaceCard").addEventListener("mouseover", mouseOver);
   function mouseOver() {
     document.getElementById("replace-card").innerHTML = input;
   }
@@ -18,8 +15,28 @@ function myFunction(){
   function mouseOut() {
     document.getElementById("replace-card").innerHTML = mask;
   }
+  ////////////////////////////////////
+  const cardArray = [];
+  const array = [];
 
+  for (let i = 0; cardArray.length < 16; i++) {
+    cardArray.push(input.charAt(i));
+  }
+  console.log(cardArray);
 
+  for (let j = 0; j < cardArray.length; j++) {
+    if(cardArray[j] !==""){
+      array.push(cardArray[j])
+    }
+  }
+  const isValid = validator.isValid(array);
+  console.log(isValid);
+
+  if (isValid === true) {
+    document.getElementById("true-or-false").innerHTML = "É válido. Boas compras! ";
+  }else{
+    document.getElementById("true-or-false").innerHTML = "Não funcionou. Por favor, revise o número digitado e tente novamente.";
+  }
 }
 
 
