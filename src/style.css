@@ -1,4 +1,21 @@
+ul {
+  border: 2px solid rgb(146, 143, 79);
+}
 
+
+li {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+
+.inline {
+  display: inline;
+}
 
 body {
 font-size: large;
