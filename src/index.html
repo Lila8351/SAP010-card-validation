@@ -23,41 +23,34 @@
 
   <main>
     <script src="index.js" type="module"></script>
-    <div class="credit-card">
 
+
+    <div class="input">
       <label for="input-card">
-        <h1>Qual o número do seu cartão?</h1>
-        <p id="input-instructions">Informe apenas números</p>
+        <h1>Informe o número de seu cartão</h1>
         <input type="password" id="input-card" name="input-card" placeholder="**** **** **** ****">
       </label>
 
       <button id="start-function">Pronto!</button>
+    </div>
 
-
-      <img id="credit-card" src="/images/cartaocreditolaranja-modified.png" alt="cartão de crédito desenhado">
-
-
-      <p>Confirme o número digitado: </p>
+    <div class="credit-card">
+      <p>Seu cartao</p>
+      <figure>
+        <img id="credit-card" src="/images/cartaocreditolaranja-modified.png" alt="cartão de crédito desenhado">
+      </figure>
 
       <p id="replace-card" name="replace-card"></p>
-      <!--p> Confirme o número do seu cartão: </p-->
-
-      <button id="choose-flag"> ok! </button>
-
-      <p>Seu cartao</p>
-
-      <p id="flag">bandeira</p>
-
-
-      <div class="flags">
-        <figure class="flags">
-          <img>
-        </figure>
-      </div>
-
+      <ul class="flags">
+        <li id="visa">visa</li>
+        <li id="master">master</li>
+        <li id="elo">elo</li>
+        <li id="AMEX">amex</li>
+      </ul>
+      <p id="is-valid"></p>
       <p id="true-or-false" name="true-or-false"></p>
-
     </div>
+
   </main>
   <footer></footer>
 </body>
