@@ -29,6 +29,10 @@ function myFunction(){
       array.push(cardArray[j])
     }
   }
+  //console.log(array);
+  array.reverse();
+  //console.log(array);
+
   const isValid = validator.isValid(array);
   console.log(isValid);
 
@@ -37,6 +41,10 @@ function myFunction(){
   }else{
     document.getElementById("true-or-false").innerHTML = "Não funcionou. Por favor, revise o número digitado e tente novamente.";
   }
+
+  //const flag = "verificando se a variavel flag funciona";
+
+
 
   const flags = Number(cardArray[0]);
 

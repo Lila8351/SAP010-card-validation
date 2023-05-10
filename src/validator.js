@@ -13,10 +13,13 @@ const validator = {
   },
 
   isValid: function(array){
-    array.reverse();
+    //array.reverse();
     let soma = 0;
     const output = [];
-    for (let i = 0; i < array.length; i++) {
+
+    //for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length ; i++) {
+
       if (i%2 === 0){
         output.push(array[i]);
       }else{
@@ -29,11 +32,14 @@ const validator = {
         }
       }
     }
+    console.log(output);
     for (let j=0; j<output.length; j++){
-      soma += output[j];
-      //soma = soma + output[j]
+      soma += Number(output[j]);
+      console.log(soma);
     }
+    //return soma%10 !==0;
     return soma%10===0;
+
   }
 }
 export default validator;
