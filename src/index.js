@@ -37,7 +37,26 @@ function myFunction(){
   }else{
     document.getElementById("true-or-false").innerHTML = "Não funcionou. Por favor, revise o número digitado e tente novamente.";
   }
+
+  const flags = Number(cardArray[0]);
+
+  if (flags === 2) {
+    document.getElementById("flag").innerHTML = "Mastercard";
+  }else if (flags === 3) {
+    document.getElementById("flag").innerHTML = "AMEX";
+  }else if (flags === 4){
+    document.getElementById("flag").innerHTML = "Visa";
+  }else if (flags === 5) {
+    document.getElementById("flag").innerHTML = "Mastercard";
+  }else{
+    document.getElementById("flag").innerHTML = "unkwown";
+  }
 }
+
+
+
+
+
 
 
 

@@ -31,6 +31,7 @@ const validator = {
     }
     for (let j=0; j<output.length; j++){
       soma += output[j];
+      //soma = soma + output[j]
     }
     return soma%10===0;
   }
