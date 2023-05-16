@@ -48,10 +48,12 @@ h6 {
 }
 
 input#inputCard{
+  display: block;
   margin-left: auto;
   margin-right: auto
 }
 startFunction{
+  display: block;
   margin-left: auto;
   margin-right: auto
 }

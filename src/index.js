@@ -1,4 +1,8 @@
+
 import validator from './validator.js';
+
+//Implementar: limitacao de quantidade de caracteres
+//             forloop para identificar números apenas e validar string.
 
 document.getElementById("start-function").addEventListener("click", myFunction);
 
@@ -45,21 +49,39 @@ function myFunction(){
   //const flag = "verificando se a variavel flag funciona";
 
 
-
-  const flags = Number(cardArray[0]);
-
-  if (flags === 2) {
-    document.getElementById("flag").innerHTML = "Mastercard";
-  }else if (flags === 3) {
-    document.getElementById("flag").innerHTML = "AMEX";
-  }else if (flags === 4){
-    document.getElementById("flag").innerHTML = "Visa";
-  }else if (flags === 5) {
-    document.getElementById("flag").innerHTML = "Mastercard";
-  }else{
-    document.getElementById("flag").innerHTML = "unkwown";
+  console.log(array.length);
+  //const flags = Number(cardArray[0]);
+  let flags = Number(array[array.length-1]);
+  switch (flags) {
+    case 2:
+      document.getElementById("flag").innerHTML = "Mastercard";
+      break;
+    case 3:
+      document.getElementById("flag").innerHTML = "AMEX";
+      break;
+    case 4:
+      document.getElementById("flag").innerHTML = "Visa";
+      break;
+    case 5:
+      document.getElementById("flag").innerHTML = "Mastercard";
+      break;
+    default:
+      text.innerHTML = "Invalid flags";
   }
+
 }
+
+  // if (flags === 2) {
+  //   document.getElementById("flag").innerHTML = "Mastercard";
+  // }else if (flags === 3) {
+  //   document.getElementById("flag").innerHTML = "AMEX";
+  // }else if (flags === 4){
+  //   document.getElementById("flag").innerHTML = "Visa";
+  // }else if (flags === 5) {
+  //   document.getElementById("flag").innerHTML = "Mastercard";
+  // }else{
+  //   document.getElementById("flag").innerHTML = "unkwown";
+  // }
 
 
 
